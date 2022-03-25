@@ -1,0 +1,12 @@
+*.log
+*/reports/*
+*/logs/*
+*/target/*
+*/test-output/*
+/target/
+target/classes/chromedriver.exe
+target/classes/chromedriver2.exe
+target/classes/pageObjects/MD_HealthInfo_BlindPO.class
+target/classes/pageObjects/MD_IndInfo_AIANPO.class
+target/classes/pageObjects/MD_IndInfo_EducationPO.class
+target/classes/pageObjects/MD_OtherInfo_MSFWPO.class

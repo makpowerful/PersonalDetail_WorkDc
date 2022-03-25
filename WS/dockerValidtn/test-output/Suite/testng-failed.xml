@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="dockertesting.dockerValidtn.ChromeTest1">
+        <methods>
+          <include name="testChrome1"/>
+          <include name="stopDocker"/>
+          <include name="startDocker"/>
+        </methods>
+      </class> <!-- dockertesting.dockerValidtn.ChromeTest1 -->
+      <class name="dockertesting.dockerValidtn.ChromeTest2">
+        <methods>
+          <include name="testChrome1"/>
+        </methods>
+      </class> <!-- dockertesting.dockerValidtn.ChromeTest2 -->
+      <class name="dockertesting.dockerValidtn.ChromeTest3">
+        <methods>
+          <include name="testChrome1"/>
+        </methods>
+      </class> <!-- dockertesting.dockerValidtn.ChromeTest3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

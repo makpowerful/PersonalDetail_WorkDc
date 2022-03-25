@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="MAINEtest.Listeners" />
+	</listeners>
+
+
+	<test name="UAT Regression Suite">
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+		      <class name="MAINEtest.test_LoginScreenUAT" />
+			<class name="MAINEtest.test_Dashboard" />
+			<class name="MAINEtest.test_GetBenefitScreen" />
+			<class name="MAINEtest.test_PrimaryAppDetailScreen" />
+			<class name="MAINEtest.test_ProgSelectionScreen" />
+			<class name="MAINEtest.test_AddingHHMembers" /> 
+			
+		     <class name="MAINEtest.test_ContactScreen" />
+		    <!--  <class name="resources.Rough2"/> -->
+		   <class name="MAINEtest.test_AuthRepScreen" />
+		   
+			<class name="MAINEtest.test_RelationshipandTaxfillingScreens" />
+			<class name="MAINEtest.test_HHInfo_HealthScreen" />
+			<class name="MAINEtest.test_HHInfo_HHCircumScreen" />
+			<class name="MAINEtest.test_HHInfo_AssetScreen" />
+			<class name="MAINEtest.test_HHInfo_OAssetScreen" />
+			<class name="MAINEtest.test_HHInfo_IncomeandSubScreen" />
+			<class name="MAINEtest.test_HHInfo_ExpenseScreen" />
+			<class name="MAINEtest.test_MemDetailsScreen" />
+			<class name="MAINEtest.test_HealthCoverScreen" />
+			<class name="MAINEtest.test_SignSubmitScreen" />
+			<!-- <class name="resources.Rough2"/>-->
+			  
+			 <!-- <class name="resources.Rough2"/> -->
+			 
+		 	<!--  
+
+		  <class name="MAINEtest.test_HHInfo_AssetScreen" />
+			<class name="MAINEtest.test_HHInfo_OAssetScreen" />
+			<class name="MAINEtest.test_HHInfo_IncomeandSubScreen" />
+			<class name="MAINEtest.test_HHInfo_ExpenseScreen" />
+			<class name="MAINEtest.test_MemDetailsScreen" />
+			<class name="MAINEtest.test_HealthCoverScreen" />
+			<class name="MAINEtest.test_SignSubmitScreen" /> -->
+
+		</classes>
+	</test>
+
+	<!-- <test name="Flow till Program Selection"> <classes> <class name="MAINEtest.test_Dashboard"/> 
+		</classes> </test> -->
+
+</suite>

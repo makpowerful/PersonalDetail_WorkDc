@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\mkalamshabaz\eclipse-workspace2021\E2EProject\RegressionSuite_SIT.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_SignSubmitScreen" class="method navigator-link" hash-for-method="validateSignSubmitReg">validateSignSubmitReg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_OAssetScreen" class="method navigator-link" hash-for-method="testClass(TC1)">testClass(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_AssetScreen" class="method navigator-link" hash-for-method="validateHHinfoAssets(TC1)">validateHHinfoAssets(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_ExpenseScreen" class="method navigator-link" hash-for-method="validateHHinfoExpenses(TC1)">validateHHinfoExpenses(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_HHCircumScreen" class="method navigator-link" hash-for-method="validateHHinfoHHCircum(TC1)">validateHHinfoHHCircum(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_HealthScreen" class="method navigator-link" hash-for-method="validateHHinfoHealth(TC1)">validateHHinfoHealth(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HHInfo_IncomeandSubScreen" class="method navigator-link" hash-for-method="validateHHinfoIncandSub(TC1)">validateHHinfoIncandSub(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_HealthCoverScreen" class="method navigator-link" hash-for-method="validateHealthCovReg(TC1)">validateHealthCovReg(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC4)">validateMemdetails(TC4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC7)">validateMemdetails(TC7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC1)">validateMemdetails(TC1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC3)">validateMemdetails(TC3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC5)">validateMemdetails(TC5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC2)">validateMemdetails(TC2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="MAINEtest.test_MemDetailsScreen" class="method navigator-link" hash-for-method="validateMemdetails(TC6)">validateMemdetails(TC6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">MAINEtest.test_SignSubmitScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSignSubmitReg">
+                  </a> <!-- validateSignSubmitReg -->
+                  <span class="method-name">validateSignSubmitReg</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Eligibility Results] but found [Sign and Submit]
+	at MAINEtest.test_SignSubmitScreen.validateSignSubmitReg(test_SignSubmitScreen.java:150)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_HealthScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHHinfoHealth(TC1)">
+                  </a> <!-- validateHHinfoHealth(TC1) -->
+                  <span class="method-name">validateHHinfoHealth</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_IncomeandSubScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHHinfoIncandSub(TC1)">
+                  </a> <!-- validateHHinfoIncandSub(TC1) -->
+                  <span class="method-name">validateHHinfoIncandSub</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_ExpenseScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHHinfoExpenses(TC1)">
+                  </a> <!-- validateHHinfoExpenses(TC1) -->
+                  <span class="method-name">validateHHinfoExpenses</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_MemDetailsScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC4)">
+                  </a> <!-- validateMemdetails(TC4) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC7)">
+                  </a> <!-- validateMemdetails(TC7) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC1)">
+                  </a> <!-- validateMemdetails(TC1) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC3)">
+                  </a> <!-- validateMemdetails(TC3) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC5)">
+                  </a> <!-- validateMemdetails(TC5) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC2)">
+                  </a> <!-- validateMemdetails(TC2) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMemdetails(TC6)">
+                  </a> <!-- validateMemdetails(TC6) -->
+                  <span class="method-name">validateMemdetails</span>
+                  <span class="parameters">(TC6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_AssetScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHHinfoAssets(TC1)">
+                  </a> <!-- validateHHinfoAssets(TC1) -->
+                  <span class="method-name">validateHHinfoAssets</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_HHCircumScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHHinfoHHCircum(TC1)">
+                  </a> <!-- validateHHinfoHHCircum(TC1) -->
+                  <span class="method-name">validateHHinfoHHCircum</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HealthCoverScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHealthCovReg(TC1)">
+                  </a> <!-- validateHealthCovReg(TC1) -->
+                  <span class="method-name">validateHealthCovReg</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MAINEtest.test_HHInfo_OAssetScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClass(TC1)">
+                  </a> <!-- testClass(TC1) -->
+                  <span class="method-name">testClass</span>
+                  <span class="parameters">(TC1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mkalamshabaz\eclipse-workspace2021\E2EProject\RegressionSuite_SIT.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;MAINEtest.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Suite&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;resources.Rough2&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_HealthScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_HHCircumScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_AssetScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_OAssetScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_IncomeandSubScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HHInfo_ExpenseScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_MemDetailsScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_HealthCoverScreen&quot;/&gt;
+      &lt;class name=&quot;MAINEtest.test_SignSubmitScreen&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Suite --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Suite (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testClass</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHHinfoAssets</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHHinfoExpenses</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHHinfoHHCircum</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHHinfoHealth</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHHinfoIncandSub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateHealthCovReg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateMemdetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateSignSubmitReg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateMemdetails')
+data.setCell(0, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(0, 3, 381406);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateMemdetails')
+data.setCell(1, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(1, 3, 244219);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateMemdetails')
+data.setCell(2, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(2, 3, 214022);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateMemdetails')
+data.setCell(3, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(3, 3, 204889);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateMemdetails')
+data.setCell(4, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(4, 3, 157362);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateMemdetails')
+data.setCell(5, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(5, 3, 151163);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateHealthCovReg')
+data.setCell(6, 2, 'MAINEtest.test_HealthCoverScreen')
+data.setCell(6, 3, 140049);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateMemdetails')
+data.setCell(7, 2, 'MAINEtest.test_MemDetailsScreen')
+data.setCell(7, 3, 122403);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateSignSubmitReg')
+data.setCell(8, 2, 'MAINEtest.test_SignSubmitScreen')
+data.setCell(8, 3, 46944);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateHHinfoHealth')
+data.setCell(9, 2, 'MAINEtest.test_HHInfo_HealthScreen')
+data.setCell(9, 3, 25891);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateHHinfoIncandSub')
+data.setCell(10, 2, 'MAINEtest.test_HHInfo_IncomeandSubScreen')
+data.setCell(10, 3, 23745);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateHHinfoExpenses')
+data.setCell(11, 2, 'MAINEtest.test_HHInfo_ExpenseScreen')
+data.setCell(11, 3, 23264);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateHHinfoHHCircum')
+data.setCell(12, 2, 'MAINEtest.test_HHInfo_HHCircumScreen')
+data.setCell(12, 3, 20574);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateHHinfoAssets')
+data.setCell(13, 2, 'MAINEtest.test_HHInfo_AssetScreen')
+data.setCell(13, 3, 14532);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testClass')
+data.setCell(14, 2, 'MAINEtest.test_HHInfo_OAssetScreen')
+data.setCell(14, 3, 12606);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 29 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">21 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_SignSubmitScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateSignSubmitPage</span>
+                <br/>
+                <span class="ignored-method-name">validateSignSubmit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_HealthScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoHealthSelectionTanf</span>
+                <br/>
+                <span class="ignored-method-name">validateHHinfoHealthSelection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_ExpenseScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoExpense</span>
+                <br/>
+                <span class="ignored-method-name">validateHHinfoExpenseTanf</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_IncomeandSubScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoIncomeandSubsidies</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_MemDetailsScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoExpenseTanf</span>
+                <br/>
+                <span class="ignored-method-name">validateAssetIncomeExpenses</span>
+                <br/>
+                <span class="ignored-method-name">validateEducation</span>
+                <br/>
+                <span class="ignored-method-name">addDependentDetails</span>
+                <br/>
+                <span class="ignored-method-name">validateAIAN</span>
+                <br/>
+                <span class="ignored-method-name">validateAssetIncomeExpensesforSNAP</span>
+                <br/>
+                <span class="ignored-method-name">validateLA</span>
+                <br/>
+                <span class="ignored-method-name">validateAIANforSNAP</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_AssetScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoHHAssetSelection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_HHCircumScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHHinfoHHCircumSelectionTanf</span>
+                <br/>
+                <span class="ignored-method-name">validateHHinfoHHCircumSelection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HealthCoverScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHeathCoverSelection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MAINEtest.test_HHInfo_OAssetScreen</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">otherAssetSelection</span>
+                <br/>
+                <span class="ignored-method-name">validateHHinfoOAssets</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">resources.Rough2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_HealthScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHHinfoHealth(TC1)</span>
+                <span class="method-start">46910 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_HHCircumScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHHinfoHHCircum(TC1)</span>
+                <span class="method-start">72810 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_AssetScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHHinfoAssets(TC1)</span>
+                <span class="method-start">93385 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_OAssetScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testClass(TC1)</span>
+                <span class="method-start">107918 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_IncomeandSubScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHHinfoIncandSub(TC1)</span>
+                <span class="method-start">120525 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HHInfo_ExpenseScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHHinfoExpenses(TC1)</span>
+                <span class="method-start">144271 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_MemDetailsScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC1)</span>
+                <span class="method-start">167536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC2)</span>
+                <span class="method-start">548943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC3)</span>
+                <span class="method-start">793163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC4)</span>
+                <span class="method-start">944327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC5)</span>
+                <span class="method-start">1101689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC6)</span>
+                <span class="method-start">1306579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMemdetails(TC7)</span>
+                <span class="method-start">1428983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_HealthCoverScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateHealthCovReg(TC1)</span>
+                <span class="method-start">1643007 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MAINEtest.test_SignSubmitScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateSignSubmitReg</span>
+                <span class="method-start">1783059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1830500 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

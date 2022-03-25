@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  Sanity Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 15 18:00:05 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1146 seconds (1146684 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MAINEtest.test_MemDetailsScreen.addDependentDetails()'><b>addDependentDetails</b><br>Test class: MAINEtest.test_MemDetailsScreen</td>
+<td></td>
+<td>115</td>
+<td>MAINEtest.test_MemDetailsScreen@5bda80bf</td></tr>
+<tr>
+<td title='MAINEtest.test_AddingHHMembers.clickNextOnHMS()'><b>clickNextOnHMS</b><br>Test class: MAINEtest.test_AddingHHMembers</td>
+<td></td>
+<td>10</td>
+<td>MAINEtest.test_AddingHHMembers@5ac86ba5</td></tr>
+<tr>
+<td title='MAINEtest.test_AddingHHMembers.clickStartHM()'><b>clickStartHM</b><br>Test class: MAINEtest.test_AddingHHMembers</td>
+<td></td>
+<td>83</td>
+<td>MAINEtest.test_AddingHHMembers@5ac86ba5</td></tr>
+<tr>
+<td title='MAINEtest.test_MemDetailsScreen.validateAIAN()'><b>validateAIAN</b><br>Test class: MAINEtest.test_MemDetailsScreen</td>
+<td></td>
+<td>33</td>
+<td>MAINEtest.test_MemDetailsScreen@5bda80bf</td></tr>
+<tr>
+<td title='MAINEtest.test_AddingHHMembers.validateAddingHHmembers()'><b>validateAddingHHmembers</b><br>Test class: MAINEtest.test_AddingHHMembers<br>Parameters: TC1</td>
+<td></td>
+<td>56</td>
+<td>MAINEtest.test_AddingHHMembers@5ac86ba5</td></tr>
+<tr>
+<td title='MAINEtest.test_AddingHHMembers.validateAddingHHmembers()'><b>validateAddingHHmembers</b><br>Test class: MAINEtest.test_AddingHHMembers<br>Parameters: TC2</td>
+<td></td>
+<td>48</td>
+<td>MAINEtest.test_AddingHHMembers@5ac86ba5</td></tr>
+<tr>
+<td title='MAINEtest.test_AddingHHMembers.validateAddingHHmembers()'><b>validateAddingHHmembers</b><br>Test class: MAINEtest.test_AddingHHMembers<br>Parameters: TC3</td>
+<td></td>
+<td>43</td>
+<td>MAINEtest.test_AddingHHMembers@5ac86ba5</td></tr>
+<tr>
+<td title='MAINEtest.test_MemDetailsScreen.validateAssetIncomeExpenses()'><b>validateAssetIncomeExpenses</b><br>Test class: MAINEtest.test_MemDetailsScreen</td>
+<td></td>
+<td>123</td>
+<td>MAINEtest.test_MemDetailsScreen@5bda80bf</td></tr>
+<tr>
+<td title='MAINEtest.test_AuthRepScreen.validateAuthRepcreation()'><b>validateAuthRepcreation</b><br>Test class: MAINEtest.test_AuthRepScreen</td>
+<td></td>
+<td>19</td>
+<td>MAINEtest.test_AuthRepScreen@2c9399a4</td></tr>
+<tr>
+<td title='MAINEtest.test_ContactScreen.validateContactSelection()'><b>validateContactSelection</b><br>Test class: MAINEtest.test_ContactScreen</td>
+<td></td>
+<td>96</td>
+<td>MAINEtest.test_ContactScreen@6c67e137</td></tr>
+<tr>
+<td title='MAINEtest.test_MemDetailsScreen.validateEducation()'><b>validateEducation</b><br>Test class: MAINEtest.test_MemDetailsScreen</td>
+<td></td>
+<td>63</td>
+<td>MAINEtest.test_MemDetailsScreen@5bda80bf</td></tr>
+<tr>
+<td title='MAINEtest.test_GetBenefitScreen.validateGetBenefit()'><b>validateGetBenefit</b><br>Test class: MAINEtest.test_GetBenefitScreen</td>
+<td></td>
+<td>7</td>
+<td>MAINEtest.test_GetBenefitScreen@4a9f80d3</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_ExpenseScreen.validateHHinfoExpense()'><b>validateHHinfoExpense</b><br>Test class: MAINEtest.test_HHInfo_ExpenseScreen</td>
+<td></td>
+<td>20</td>
+<td>MAINEtest.test_HHInfo_ExpenseScreen@172ca72b</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_AssetScreen.validateHHinfoHHAssetSelection()'><b>validateHHinfoHHAssetSelection</b><br>Test class: MAINEtest.test_HHInfo_AssetScreen</td>
+<td></td>
+<td>16</td>
+<td>MAINEtest.test_HHInfo_AssetScreen@63c5efee</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_HHCircumScreen.validateHHinfoHHCircumSelection()'><b>validateHHinfoHHCircumSelection</b><br>Test class: MAINEtest.test_HHInfo_HHCircumScreen</td>
+<td></td>
+<td>21</td>
+<td>MAINEtest.test_HHInfo_HHCircumScreen@53ab0286</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_HealthScreen.validateHHinfoHealthSelection()'><b>validateHHinfoHealthSelection</b><br>Test class: MAINEtest.test_HHInfo_HealthScreen</td>
+<td></td>
+<td>23</td>
+<td>MAINEtest.test_HHInfo_HealthScreen@9635fa</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_IncomeandSubScreen.validateHHinfoIncomeandSubsidies()'><b>validateHHinfoIncomeandSubsidies</b><br>Test class: MAINEtest.test_HHInfo_IncomeandSubScreen</td>
+<td></td>
+<td>23</td>
+<td>MAINEtest.test_HHInfo_IncomeandSubScreen@1c98290c</td></tr>
+<tr>
+<td title='MAINEtest.test_HHInfo_OAssetScreen.validateHHinfoOAssets()'><b>validateHHinfoOAssets</b><br>Test class: MAINEtest.test_HHInfo_OAssetScreen</td>
+<td></td>
+<td>15</td>
+<td>MAINEtest.test_HHInfo_OAssetScreen@2d10e0b1</td></tr>
+<tr>
+<td title='MAINEtest.test_HealthCoverScreen.validateHeathCoverSelection()'><b>validateHeathCoverSelection</b><br>Test class: MAINEtest.test_HealthCoverScreen</td>
+<td></td>
+<td>23</td>
+<td>MAINEtest.test_HealthCoverScreen@71e5f61d</td></tr>
+<tr>
+<td title='MAINEtest.test_MemDetailsScreen.validateLA()'><b>validateLA</b><br>Test class: MAINEtest.test_MemDetailsScreen</td>
+<td></td>
+<td>26</td>
+<td>MAINEtest.test_MemDetailsScreen@5bda80bf</td></tr>
+<tr>
+<td title='MAINEtest.test_LoginScreen.validateLoginPage()'><b>validateLoginPage</b><br>Test class: MAINEtest.test_LoginScreen</td>
+<td></td>
+<td>37</td>
+<td>MAINEtest.test_LoginScreen@f9d87b</td></tr>
+<tr>
+<td title='MAINEtest.test_PrimaryAppDetailScreen.validatePriAppDetail()'><b>validatePriAppDetail</b><br>Test class: MAINEtest.test_PrimaryAppDetailScreen</td>
+<td></td>
+<td>11</td>
+<td>MAINEtest.test_PrimaryAppDetailScreen@35beb15e</td></tr>
+<tr>
+<td title='MAINEtest.test_ProgSelectionScreen.validateProgSelec()'><b>validateProgSelec</b><br>Test class: MAINEtest.test_ProgSelectionScreen</td>
+<td></td>
+<td>11</td>
+<td>MAINEtest.test_ProgSelectionScreen@41fe9859</td></tr>
+<tr>
+<td title='MAINEtest.test_RelationshipandTaxfillingScreens.validateRelationandTaxfilingentries()'><b>validateRelationandTaxfilingentries</b><br>Test class: MAINEtest.test_RelationshipandTaxfillingScreens</td>
+<td></td>
+<td>149</td>
+<td>MAINEtest.test_RelationshipandTaxfillingScreens@191ae03f</td></tr>
+<tr>
+<td title='MAINEtest.test_SignSubmitScreen.validateSignSubmit()'><b>validateSignSubmit</b><br>Test class: MAINEtest.test_SignSubmitScreen</td>
+<td></td>
+<td>38</td>
+<td>MAINEtest.test_SignSubmitScreen@2ce86164</td></tr>
+<tr>
+<td title='MAINEtest.test_Dashboard.validateWelcomeScreen()'><b>validateWelcomeScreen</b><br>Test class: MAINEtest.test_Dashboard</td>
+<td></td>
+<td>10</td>
+<td>MAINEtest.test_Dashboard@70dd7e15</td></tr>
+</table><p>
+</body>
+</html>

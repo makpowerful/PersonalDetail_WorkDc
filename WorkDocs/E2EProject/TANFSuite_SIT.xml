@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="MAINEtest.Listeners" />
+	</listeners>
+
+
+	<test name="SNAP">
+		<groups>
+			<run>
+				<include name="TANF" />
+			</run>
+		</groups>
+		<classes>
+			<class name="MAINEtest.test_CreateNewAccount" />
+			<class name="MAINEtest.test_ResetPassword" />
+			<class name="MAINEtest.test_Dashboard" />
+			<class name="MAINEtest.test_GetBenefitScreen" />
+			<class name="MAINEtest.test_PrimaryAppDetailScreen" />
+			<class name="MAINEtest.test_ProgSelectionScreen" />
+
+		</classes>
+	</test>
+
+	<!-- <test name="Flow till Program Selection"> <classes> <class name="MAINEtest.test_Dashboard"/> 
+		</classes> </test> -->
+
+</suite>

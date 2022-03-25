@@ -1,0 +1,197 @@
+package MAINEtest;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.usermodel.Cell;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import pageObjects.AuthRepPO;
+import pageObjects.ContactPO;
+import pageObjects.HHMemberPO;
+import pageObjects.LoginScreenPO;
+import pageObjects.ProgSelectionPO;
+import pageObjects.RelationshipandTaxfillingPO;
+import resources.ExcelData;
+import resources.base;
+
+public class test_AddingHHMembers extends base {
+
+	// public WebDriver driver;
+	public static Logger log = LogManager.getLogger(test_AddingHHMembers.class.getName());
+	ExcelData excelData = new ExcelData();
+	ArrayList<String> al = new ArrayList<String>();
+
+	/*
+	 * @BeforeTest public void initialize() throws IOException {
+	 * 
+	 * driver = initializeDriver(); driver.manage().window().maximize();
+	 * log.info("Driver is initialized"); }
+	 */
+
+	@Test(groups="sanity")
+	public void validateAddingHHmembers() throws IOException, InterruptedException {
+
+		// Adding HHMembers
+
+		log.info("Adding HH Member details for HH member1");
+		HHMemberPO hhmem = new HHMemberPO(driver);
+		hhmem.ClickStartHHM();
+		Thread.sleep(10000);
+		hhmem.ClickStartHHM1();
+		Thread.sleep(5000);
+
+		al = excelData.getData("TC1", "HHMemDetails", "Sno");
+		System.out.println(al.toString());
+		hhmem.EnterMN(al.get(2).toString());
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.SelectGender_M();
+		Thread.sleep(1000);
+		hhmem.Select_Does_HHMhave_SSN_Y();
+		Thread.sleep(1000);
+		hhmem.Enter_SSN(al.get(4).toString());
+		Thread.sleep(1000);
+		hhmem.Enter_CN_SSN(al.get(5).toString());
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_US_Citizen_Y();
+		Thread.sleep(1000);
+		hhmem.Select_US_Miltary_N();
+		Thread.sleep(1000);
+		hhmem.Select_Resid_Maine_Y();
+		Thread.sleep(1000);
+		hhmem.Select_Race_AmerAlasK();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_HispLatino();
+		Thread.sleep(1000);
+		hhmem.Select_MaritalStatus_Married();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_Prg_MainCareCubCare();
+		Thread.sleep(1000);
+		hhmem.Select_Prg_TANFHOH();
+		Thread.sleep(1000);
+		hhmem.Select_SubPrg_MainCareCubCareHOH();
+		Scrollpagedown();
+		hhmem.ClickSave();
+		Thread.sleep(5000);
+		hhmem.ClickContinueAny();
+		Thread.sleep(5000);
+
+		Assert.assertEquals(driver.getTitle(), "Household Summary");
+		log.info("HHM1 Details have been added successfully");
+
+		log.info("Adding HH Member details for HH member2");
+
+		hhmem.ClickAddHHMem();
+		Thread.sleep(1200);
+		al = excelData.getData("TC2", "HHMemDetails", "Sno");
+
+		System.out.println(al.toString());
+		hhmem.EnterFN(al.get(1).toString());
+		Thread.sleep(1000);
+		hhmem.EnterMN(al.get(2).toString());
+		Thread.sleep(1000);
+		hhmem.EnterLN(al.get(3).toString());
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.SelectGender_F();
+		Thread.sleep(1000);
+		hhmem.EnterDob(al.get(4).toString());
+		Thread.sleep(1000);
+		hhmem.Select_Does_HHMhave_SSN_N();
+		Thread.sleep(1000);
+		hhmem.Select_Doesnot_SSN_NtApplied();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_US_Citizen_Y();
+		Thread.sleep(1000);
+		hhmem.Select_US_Miltary_N();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_Resid_Maine_Y();
+		Thread.sleep(1000);
+		hhmem.Select_Race_Asian();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_HispLatino();
+		Thread.sleep(1000);
+		hhmem.Select_MaritalStatus_Married();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_Prg_MainCareCubCare();
+		Thread.sleep(1000);
+		Scrolldown();
+		hhmem.Select_Prg_TANF();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_SubPrg_MainCareCubCare();
+		hhmem.ClickSave();
+		Thread.sleep(5000);
+		Assert.assertEquals(driver.getTitle(), "Household Summary");
+		log.info("HHM2 Details have been added successfully");
+
+		log.info("Adding HH Member details for HH member3");
+		hhmem.ClickAddHHMem();
+		Thread.sleep(1200);
+		al = excelData.getData("TC3", "HHMemDetails", "Sno");
+
+		System.out.println(al.toString());
+		hhmem.EnterFN(al.get(1).toString());
+		Thread.sleep(1000);
+		hhmem.EnterLN(al.get(2).toString());
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.SelectGender_M();
+		Thread.sleep(1000);
+		hhmem.EnterDob(al.get(3).toString());
+		Thread.sleep(1000);
+		hhmem.Select_Does_HHMhave_SSN_N();
+		Thread.sleep(1000);
+		hhmem.Select_Doesnot_SSN_NtApplied();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_US_Citizen_Y();
+		Thread.sleep(1000);
+		hhmem.Select_US_Miltary_N();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_Resid_Maine_Y();
+		Thread.sleep(1000);
+		hhmem.Select_Race_Asian();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_HispLatino();
+		Thread.sleep(1000);
+		hhmem.Select_MaritalStatus_Single();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_Prg_MainCareCubCare();
+		Thread.sleep(1000);
+		Scrolldown();
+		hhmem.Select_Prg_TANF();
+		Thread.sleep(1000);
+		Scrollpagedown();
+		hhmem.Select_SubPrg_MainCareCubCare();
+		hhmem.ClickSave();
+		Thread.sleep(5000);
+		Assert.assertEquals(driver.getTitle(), "Household Summary");
+		log.info("HHM3 Details have been added successfully");
+
+		log.info("Saving all HHMember Records");
+		Scrollpagedown();
+		Scrollpagedown();
+		hhmem.ClickNext();
+		Thread.sleep(5000);
+		Assert.assertEquals(driver.getTitle(), "Application Summary");
+		log.info("All HH Member Details have been added successfully");
+
+	}
+}

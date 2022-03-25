@@ -1,0 +1,23 @@
+package dockertesting.dockerValidtn;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class TestChromeconnection {
+
+	public static void main(String[] args) throws MalformedURLException {
+		// TODO Auto-generated method stub
+		
+		DesiredCapabilities cap=DesiredCapabilities.chrome();
+		URL u=new URL("http://localhost:4444/wd/hub");
+		RemoteWebDriver dr=new RemoteWebDriver(u,cap);
+		dr.get("https://www.google.com/");
+		System.out.print(dr.getTitle());
+		
+
+	}
+
+}

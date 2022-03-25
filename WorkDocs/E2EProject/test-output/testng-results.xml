@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="21" total="36" passed="14" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-01T16:56:56 IST" name="Suite" finished-at="2021-12-01T17:27:28 IST" duration-ms="1831452">
+    <groups>
+      <group name="Regression">
+        <method signature="test_HHInfo_AssetScreen.validateHHinfoAssets(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_AssetScreen@5b970f7]" name="validateHHinfoAssets" class="MAINEtest.test_HHInfo_AssetScreen"/>
+        <method signature="test_HHInfo_ExpenseScreen.validateHHinfoExpenses(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_ExpenseScreen@6175619b]" name="validateHHinfoExpenses" class="MAINEtest.test_HHInfo_ExpenseScreen"/>
+        <method signature="test_HHInfo_HHCircumScreen.validateHHinfoHHCircum(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_HHCircumScreen@1a1da881]" name="validateHHinfoHHCircum" class="MAINEtest.test_HHInfo_HHCircumScreen"/>
+        <method signature="test_HHInfo_HealthScreen.validateHHinfoHealth(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_HealthScreen@119f1f2a]" name="validateHHinfoHealth" class="MAINEtest.test_HHInfo_HealthScreen"/>
+        <method signature="test_HHInfo_IncomeandSubScreen.validateHHinfoIncandSub(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_IncomeandSubScreen@165b8a71]" name="validateHHinfoIncandSub" class="MAINEtest.test_HHInfo_IncomeandSubScreen"/>
+        <method signature="test_HHInfo_OAssetScreen.testClass(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_OAssetScreen@7fd4acee]" name="testClass" class="MAINEtest.test_HHInfo_OAssetScreen"/>
+        <method signature="test_HealthCoverScreen.validateHealthCovReg(java.lang.String)[pri:0, instance:MAINEtest.test_HealthCoverScreen@756cf158]" name="validateHealthCovReg" class="MAINEtest.test_HealthCoverScreen"/>
+        <method signature="test_MemDetailsScreen.validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" name="validateMemdetails" class="MAINEtest.test_MemDetailsScreen"/>
+        <method signature="test_SignSubmitScreen.validateSignSubmitReg()[pri:0, instance:MAINEtest.test_SignSubmitScreen@3f2ef586]" name="validateSignSubmitReg" class="MAINEtest.test_SignSubmitScreen"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2021-12-01T16:56:56 IST" name="Regression Suite" finished-at="2021-12-01T17:27:28 IST" duration-ms="1831452">
+      <class name="MAINEtest.test_HHInfo_ExpenseScreen">
+        <test-method signature="validateHHinfoExpenses(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_ExpenseScreen@6175619b]" started-at="2021-12-01T16:59:20 IST" name="validateHHinfoExpenses" data-provider="Datapro" finished-at="2021-12-01T16:59:44 IST" duration-ms="23264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHHinfoExpenses -->
+      </class> <!-- MAINEtest.test_HHInfo_ExpenseScreen -->
+      <class name="MAINEtest.test_SignSubmitScreen">
+        <test-method signature="validateSignSubmitReg()[pri:0, instance:MAINEtest.test_SignSubmitScreen@3f2ef586]" started-at="2021-12-01T17:26:39 IST" name="validateSignSubmitReg" finished-at="2021-12-01T17:27:26 IST" duration-ms="46944" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Eligibility Results] but found [Sign and Submit]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Eligibility Results] but found [Sign and Submit]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at MAINEtest.test_SignSubmitScreen.validateSignSubmitReg(test_SignSubmitScreen.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignSubmitReg -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:MAINEtest.test_SignSubmitScreen@3f2ef586]" started-at="2021-12-01T17:27:27 IST" name="teardown" finished-at="2021-12-01T17:27:28 IST" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- MAINEtest.test_SignSubmitScreen -->
+      <class name="MAINEtest.test_HHInfo_HealthScreen">
+        <test-method signature="validateHHinfoHealth(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_HealthScreen@119f1f2a]" started-at="2021-12-01T16:57:43 IST" name="validateHHinfoHealth" data-provider="Datapro" finished-at="2021-12-01T16:58:09 IST" duration-ms="25891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHHinfoHealth -->
+      </class> <!-- MAINEtest.test_HHInfo_HealthScreen -->
+      <class name="MAINEtest.test_HHInfo_IncomeandSubScreen">
+        <test-method signature="validateHHinfoIncandSub(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_IncomeandSubScreen@165b8a71]" started-at="2021-12-01T16:58:57 IST" name="validateHHinfoIncandSub" data-provider="Datapro" finished-at="2021-12-01T16:59:20 IST" duration-ms="23745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHHinfoIncandSub -->
+      </class> <!-- MAINEtest.test_HHInfo_IncomeandSubScreen -->
+      <class name="MAINEtest.test_MemDetailsScreen">
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T16:59:44 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:06:05 IST" duration-ms="381406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:06:05 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:10:09 IST" duration-ms="244219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:10:09 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:12:41 IST" duration-ms="151163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:12:41 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:15:18 IST" duration-ms="157362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:15:18 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:18:43 IST" duration-ms="204889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:18:43 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:20:45 IST" duration-ms="122403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+        <test-method signature="validateMemdetails(java.lang.String)[pri:0, instance:MAINEtest.test_MemDetailsScreen@2f058b8a]" started-at="2021-12-01T17:20:45 IST" name="validateMemdetails" data-provider="Datapro" finished-at="2021-12-01T17:24:19 IST" duration-ms="214022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMemdetails -->
+      </class> <!-- MAINEtest.test_MemDetailsScreen -->
+      <class name="MAINEtest.test_HHInfo_HHCircumScreen">
+        <test-method signature="validateHHinfoHHCircum(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_HHCircumScreen@1a1da881]" started-at="2021-12-01T16:58:09 IST" name="validateHHinfoHHCircum" data-provider="Datapro" finished-at="2021-12-01T16:58:30 IST" duration-ms="20574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHHinfoHHCircum -->
+      </class> <!-- MAINEtest.test_HHInfo_HHCircumScreen -->
+      <class name="resources.Rough2">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:resources.Rough2@716a7124]" started-at="2021-12-01T16:56:56 IST" name="initialize" finished-at="2021-12-01T16:57:43 IST" duration-ms="46894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+      </class> <!-- resources.Rough2 -->
+      <class name="MAINEtest.test_HHInfo_AssetScreen">
+        <test-method signature="validateHHinfoAssets(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_AssetScreen@5b970f7]" started-at="2021-12-01T16:58:30 IST" name="validateHHinfoAssets" data-provider="Datapro" finished-at="2021-12-01T16:58:44 IST" duration-ms="14532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHHinfoAssets -->
+      </class> <!-- MAINEtest.test_HHInfo_AssetScreen -->
+      <class name="MAINEtest.test_HealthCoverScreen">
+        <test-method signature="validateHealthCovReg(java.lang.String)[pri:0, instance:MAINEtest.test_HealthCoverScreen@756cf158]" started-at="2021-12-01T17:24:19 IST" name="validateHealthCovReg" data-provider="Datapro" finished-at="2021-12-01T17:26:39 IST" duration-ms="140049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHealthCovReg -->
+      </class> <!-- MAINEtest.test_HealthCoverScreen -->
+      <class name="MAINEtest.test_HHInfo_OAssetScreen">
+        <test-method signature="testClass(java.lang.String)[pri:0, instance:MAINEtest.test_HHInfo_OAssetScreen@7fd4acee]" started-at="2021-12-01T16:58:44 IST" name="testClass" data-provider="Datapro" finished-at="2021-12-01T16:58:57 IST" duration-ms="12606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClass -->
+      </class> <!-- MAINEtest.test_HHInfo_OAssetScreen -->
+    </test> <!-- Regression Suite -->
+  </suite> <!-- Suite -->
+</testng-results>

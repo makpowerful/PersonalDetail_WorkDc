@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MAINE_Project"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="pageObjects.HHInformation_HealthPO"/>
+        <listEntry value="pageObjects.HHInformation_ExpensePO"/>
+        <listEntry value="pageObjects.PrimaryAppDetailPO"/>
+        <listEntry value="pageObjects.HHInformation_IncomeandSubPO"/>
+        <listEntry value="pageObjects.LandingPage"/>
+        <listEntry value="pageObjects.HHInformation_AssetPO"/>
+        <listEntry value="pageObjects.MD_IndInfo_EducationPO"/>
+        <listEntry value="pageObjects.HHMemberPO"/>
+        <listEntry value="pageObjects.HHInformation_OAssetPO"/>
+        <listEntry value="pageObjects.MD_IndInfo_AIANPO"/>
+        <listEntry value="pageObjects.ProgSelectionPO"/>
+        <listEntry value="pageObjects.HHInformation_HHCircumPO"/>
+        <listEntry value="pageObjects.PreScreenPO"/>
+        <listEntry value="pageObjects.RelationshipandTaxfillingPO"/>
+        <listEntry value="pageObjects.ContactPO"/>
+        <listEntry value="pageObjects.GetBenefitPO"/>
+        <listEntry value="pageObjects.LoginScreenPO"/>
+        <listEntry value="pageObjects.AuthRepPO"/>
+        <listEntry value="pageObjects.DashboardPO"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

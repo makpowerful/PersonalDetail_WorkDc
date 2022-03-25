@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="switchWindow"/>
+		<item key="wrap" value="false"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="switchwindow"/>
+			<item value="switch"/>
+			<item value="gradle"/>
+			<item value="selenium-hub exited"/>
+			<item value="cubcare"/>
+			<item value="selectAdd"/>
+			<item value="selectadd"/>
+			<item value="THPL"/>
+			<item value="select"/>
+			<item value="Select"/>
+			<item value="PickLRelationship"/>
+			<item value="wait(1);"/>
+			<item value="wait(3);"/>
+			<item value="&#x09;public void PickLTReasonforRemoval() throws Exception {"/>
+			<item value="&quot; &quot;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Thread.sleep(700);"/>
+			<item value="wait(2);"/>
+			<item value="&quot;&quot;"/>
+			<item value="al = excelData.getData(TCid, &quot;Reg-MD-IncmSumry&quot;, &quot;Sno&quot;);"/>
+			<item value="al = excelData.getData(TCid, &quot;Test&quot;, &quot;Sno&quot;);"/>
+			<item value="Reg-MD-Expenses"/>
+			<item value="if(isDisplayed"/>
+			<item value="isDisplayed"/>
+			<item value="visibleText"/>
+			<item value="start.size()"/>
+			<item value="List&lt;WebElement&gt; start=driver.findElements(By.xpath(&quot;//*[text()=&apos;Start&apos;]&quot;));"/>
+			<item value="Test"/>
+			<item value="Reg-HI-Expenses"/>
+			<item value="Reg-HI-OAssets"/>
+			<item value="Reg-HI-Assets"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1321"/>
+		<item key="DIALOG_Y_ORIGIN" value="84"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,0 +1,15 @@
+MSO_JSFormSubmit1=on
+MSO_ServerErrorsProb=50
+MSO_ServerLoadProb=50
+save=Update
+.cgifields=MSO_JSCalc
+.cgifields=MSO_JSFormSubmit1
+.cgifields=MSO_JSVerify
+.cgifields=MSO_Redirect
+.cgifields=MSO_Redirects
+.cgifields=MSO_SLoad
+.cgifields=MSO_Comments
+.cgifields=MSO_JSWPages
+.cgifields=MSO_SErrors
+.cgifields=MSO_JSFormSubmit2
+=

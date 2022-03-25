@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-07T13:03:56 IST" name="Default suite" finished-at="2022-03-07T13:04:00 IST" duration-ms="4251">
+    <groups>
+    </groups>
+    <test started-at="2022-03-07T13:03:56 IST" name="Default test" finished-at="2022-03-07T13:04:00 IST" duration-ms="4251">
+      <class name="com.testing.cpsat.mock.TestPrac">
+        <test-method signature="test_Sample()[pri:0, instance:com.testing.cpsat.mock.TestPrac@52102734]" started-at="2022-03-07T13:03:56 IST" name="test_Sample" finished-at="2022-03-07T13:04:00 IST" duration-ms="4181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Sample -->
+      </class> <!-- com.testing.cpsat.mock.TestPrac -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

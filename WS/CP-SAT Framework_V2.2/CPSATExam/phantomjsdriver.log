@@ -1,0 +1,19 @@
+[INFO  - 2020-07-23T09:55:22.968Z] GhostDriver - Main - running on port 1472
+[INFO  - 2020-07-23T09:55:23.974Z] Session [a0b136d0-ccca-11ea-a846-0556f5cff0f8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":false}
+[INFO  - 2020-07-23T09:55:23.974Z] Session [a0b136d0-ccca-11ea-a846-0556f5cff0f8] - page.customHeaders:  - {}
+[INFO  - 2020-07-23T09:55:23.975Z] Session [a0b136d0-ccca-11ea-a846-0556f5cff0f8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-07-23T09:55:23.975Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a0b136d0-ccca-11ea-a846-0556f5cff0f8
+[INFO  - 2020-07-23T09:55:54.662Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-07-23T11:04:50.730Z] GhostDriver - Main - running on port 10441
+[INFO  - 2020-07-23T11:04:51.713Z] Session [54db9070-ccd4-11ea-b49a-77b93e0ec96c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":false}
+[INFO  - 2020-07-23T11:04:51.714Z] Session [54db9070-ccd4-11ea-b49a-77b93e0ec96c] - page.customHeaders:  - {}
+[INFO  - 2020-07-23T11:04:51.714Z] Session [54db9070-ccd4-11ea-b49a-77b93e0ec96c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-07-23T11:04:51.714Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 54db9070-ccd4-11ea-b49a-77b93e0ec96c
+[ERROR - 2020-07-23T11:04:52.688Z] Session [54db9070-ccd4-11ea-b49a-77b93e0ec96c] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '$("#newsticker-demo").jCarouselLite')
+[ERROR - 2020-07-23T11:04:52.688Z] Session [54db9070-ccd4-11ea-b49a-77b93e0ec96c] - page.onError - stack:
+  (anonymous function) (https://www.cii.in/:87)
+  l (https://www.cii.in/js/jquery.1.8.2.min.js:2)
+  fireWith (https://www.cii.in/js/jquery.1.8.2.min.js:2)
+  ready (https://www.cii.in/js/jquery.1.8.2.min.js:2)
+  A (https://www.cii.in/js/jquery.1.8.2.min.js:2)
+[INFO  - 2020-07-23T11:05:18.910Z] ShutdownReqHand - _handle - About to shutdown

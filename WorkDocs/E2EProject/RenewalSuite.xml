@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="MAINEtest.Listeners" />
+	</listeners>
+
+
+	<test name="Renewal Suite">
+		<groups>
+			<run>
+				<include name="Renewal" />
+			</run>
+		</groups>
+		<classes>
+		       <class name="MAINEtest.test_LoginScreen" />
+			<!-- <class name="Prefill.test_Dashboard" />
+			<class name="Prefill.test_GetRenewalScreen" />  -->
+		<!-- 	<class name="MAINEtest.test_PrimaryAppDetailScreen" />
+			<class name="MAINEtest.test_ProgSelectionScreen" />-->
+			<class name="Prefill.test_HHMembersSummary" /> 
+			
+		<!--      <class name="MAINEtest.test_ContactScreen" />
+		     <class name="resources.Rough2"/>
+		   <class name="MAINEtest.test_AuthRepScreen" />
+		   
+			<class name="MAINEtest.test_RelationshipandTaxfillingScreens" />
+			<class name="MAINEtest.test_HHInfo_HealthScreen" />
+			<class name="MAINEtest.test_HHInfo_HHCircumScreen" />
+			<class name="MAINEtest.test_HHInfo_AssetScreen" />
+			<class name="MAINEtest.test_HHInfo_OAssetScreen" />
+			<class name="MAINEtest.test_HHInfo_IncomeandSubScreen" />
+			<class name="MAINEtest.test_HHInfo_ExpenseScreen" />
+			<class name="MAINEtest.test_MemDetailsScreen" />
+			<class name="MAINEtest.test_HealthCoverScreen" />
+			<class name="MAINEtest.test_SignSubmitScreen" /> -->
+			<!-- <class name="resources.Rough 2"/>-->
+			  
+			 <!-- <class name="resources.Rough2"/> -->
+			 
+		 	<!--  
+
+		  <class name="MAINEtest.test_HHInfo_AssetScreen" />
+			<class name="MAINEtest.test_HHInfo_OAssetScreen" />
+			<class name="MAINEtest.test_HHInfo_IncomeandSubScreen" />
+			<class name="MAINEtest.test_HHInfo_ExpenseScreen" />
+			<class name="MAINEtest.test_MemDetailsScreen" />
+			<class name="MAINEtest.test_HealthCoverScreen" />
+			<class name="MAINEtest.test_SignSubmitScreen" /> -->
+
+		</classes>
+	</test>
+
+</suite>

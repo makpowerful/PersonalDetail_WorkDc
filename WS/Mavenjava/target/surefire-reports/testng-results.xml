@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="44" started-at="2021-01-27T14:48:06 IST" finished-at="2021-01-27T14:48:06 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="44" started-at="2021-01-27T14:48:06 IST" finished-at="2021-01-27T14:48:06 IST">
+      <class name="MAINE.HHTest">
+        <test-method status="PASS" signature="HH()[pri:0, instance:MAINE.HHTest@31dc339b]" name="HH" duration-ms="5" started-at="2021-01-27T14:48:06 IST" finished-at="2021-01-27T14:48:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HH -->
+      </class> <!-- MAINE.HHTest -->
+      <class name="MAINE.IntakeTest">
+        <test-method status="PASS" signature="InHome()[pri:0, instance:MAINE.IntakeTest@544fe44c]" name="InHome" duration-ms="0" started-at="2021-01-27T14:48:06 IST" finished-at="2021-01-27T14:48:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InHome -->
+      </class> <!-- MAINE.IntakeTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
