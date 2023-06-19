@@ -1,3 +1,8 @@
+Press ALT+F11 to open VBE, then Control+G to open the Immediate Window. Type the following and hit enter:
+for each v in range("A2:E6") : v.value = "'" & v.value : next
+=IF(LEN(D2)-LEN(SUBSTITUTE(D2,"'",""))>0,LEN(D2)-LEN(SUBSTITUTE(D2,"'","")),0)/2
+
+
 https://w_ww.youtube.com/watch?v=5uaXq-xDp2g&ab_channel=warikoo
 
 +91 2067031700 - Bajaj number 
