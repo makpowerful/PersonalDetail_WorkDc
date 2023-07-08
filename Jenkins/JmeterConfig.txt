@@ -1,0 +1,20 @@
+pwd
+ls -al
+curl -O https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
+tar -xvf apache-jmeter-5.5.tgz 
+rm -rf apache-jmeter-5.3/docs apache-jmeter-5.5/printable_docs 
+cd apache-jmeter-5.5/lib
+curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.2.1/cmdrunner-2.2.1.jar
+cd ext/
+curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.6/jmeter-plugins-manager-1.6.jar
+pwd
+ls -al
+cd ..
+java  -jar cmdrunner-2.2.1.jar --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-casutg 2.10
+pwd
+cd ..
+cd bin/
+pwd
+./jmeter.sh --version
+pwd
+sh jmeter -n -t ../../jmx_Files/ConfigurationManagement_API2.jmx -l ../../resultsJMX/TestResult_ConfigurationManagement_API2.jtl
