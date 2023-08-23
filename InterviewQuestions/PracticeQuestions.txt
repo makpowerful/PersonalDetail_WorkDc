@@ -1,0 +1,15 @@
+bubble sort
+merge sort
+binary search
+Duplicate number in array list
+reverse alphabet not special character
+sort hashmap by key
+sort hashmap by value
+Matrix [add sub multiply]
+reverse of number
+Hashset first and last values
+palindrome
+fibonnaci
+prime
+count occurance of alphabets/vowels
+Pyramid prog [All Patterns]
